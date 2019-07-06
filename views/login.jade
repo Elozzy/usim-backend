@@ -5,6 +5,7 @@ html
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     meta(http-equiv='X-UA-Compatible', content='ie=edge')
     meta(http-equiv='X-UA-Compatible', content='IE=7')
+    title login
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css')
     script(defer='', src='https://use.fontawesome.com/releases/v5.3.1/js/all.js')
     style.
@@ -66,27 +67,28 @@ html
     section.section.columns
       #login-cont.container.column
         label.title.is-size-2-desktop.has-text-light Welcome Back
-        .field
-          label.label.has-text-success School Name
-          .control
-            .select
-              select
-                option School Name
-                option With options
-        .field
-          label.label.has-text-success Email
-          .control.has-icons-left.has-icons-right
-            input.input(type='email', placeholder='Email input', value='hello@')
-            span.icon.is-small.is-left
-              i.fas.fa-envelope
-        .field
-          label.label.has-text-success Password
-          p.control.has-icons-left
-            input.input(type='password', placeholder='Password')
-            span.icon.is-small.is-left
-              i.fas.fa-lock
-        .field
-          p.control
+        form(method='post', action='/users/login', enctype='multipart/form-data')
+            .field
+              label.label.has-text-success School Name
+              .control
+                .select
+                  select
+                    option School Name
+                    option With options
+            .field
+              label.label.has-text-success Email
+              .control.has-icons-left.has-icons-right
+                input.input(type='email', placeholder='Email input', value='hello@')
+                span.icon.is-small.is-left
+                  i.fas.fa-envelope
+            .field
+              label.label.has-text-success Password
+              p.control.has-icons-left
+                input.input(type='password', placeholder='Password')
+                span.icon.is-small.is-left
+                  i.fas.fa-lock
+            .field
+              p.control
             button.button.is-success
               | Login
       .container.pict.column
