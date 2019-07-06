@@ -1,0 +1,56 @@
+doctype html
+html
+  head
+    meta(http-equiv='Content-Type', content='text/html;charset=UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    meta(http-equiv='X-UA-Compatible', content='IE=7')
+    link(rel='stylesheet', href='../css/schooldashstyle.css')
+    link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/jodit/3.1.92/jodit.min.css')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/jodit/3.1.92/jodit.min.js')
+    script(defer='', src='https://use.fontawesome.com/releases/v5.3.1/js/all.js')
+    link(rel='manifest', href='/manifest.json')
+    meta(name='apple-mobile-web-app-status-bar', content='#FFE1C4')
+    meta(name='theme-color', content='#FFE1C4')
+  body
+    #mySidenav.sidenav
+      a.closebtn(href='javascript:void(0)', onclick='closeNav()') ×
+      img.profile(src='/public/images/lms.jpg', alt='')
+      p#school-name USIMS
+      ul
+        li
+          a(href='/index.html') Home
+        li
+          a#announce(href='#') Applicants
+        li
+          a(href='#') Approved Schools
+    // Use any element to open the sidenav
+    span(onclick='openNav()')
+      a
+        img.trigger(src='/public/images/menu.svg', alt='')
+    // Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page
+    #main
+      section.admin
+        // Applicants
+        ul.applicants
+          li.apls
+            | School name
+            .choice
+              button.view view certificate
+              button.accept accept
+              button.reject reject
+          li.apls
+            | School name
+            .choice
+              button.view view certificate
+              button.accept accept
+              button.reject reject
+        // Approved
+        ul.approved
+          li school name
+          li school name
+          li school name
+          li school name
+    script(src='https://code.jquery.com/jquery-3.4.1.min.js', integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=', crossorigin='anonymous')
+    script(src='/public/javascripts/dashboard.js')
+    script(src='/public/javascripts/app.js')

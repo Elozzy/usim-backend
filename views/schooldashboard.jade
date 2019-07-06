@@ -1,0 +1,110 @@
+doctype html
+html
+  head
+    meta(http-equiv='Content-Type', content='text/html;charset=UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    meta(http-equiv='X-UA-Compatible', content='IE=7')
+    link(rel='stylesheet', href='../css/schooldashstyle.css')
+    link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/jodit/3.1.92/jodit.min.css')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/jodit/3.1.92/jodit.min.js')
+    script(defer='', src='https://use.fontawesome.com/releases/v5.3.1/js/all.js')
+  body
+    #mySidenav.sidenav
+      a.closebtn(href='javascript:void(0)', onclick='closeNav()') ×
+      img.profile(src='/css/img/lms.jpg', alt='')
+      p#school-name School Name
+      ul
+        li
+          a(href='/index.html') Home
+        li
+          a#announce(href='#') Announcements
+        li
+          a(href='#') Library
+        li
+          a(href='#') e-library
+        li
+          a(href='#') Forum
+        li
+          a(href='jumia.com.ng') Market
+        li
+          a Incident Report
+        li
+          p Admin
+        li
+          .dropdown
+            .dropbtn Staff Management
+            .dropdown-content
+              a#register-staff(href='#') Register staff
+              a(href='#') Staff data
+        li
+          .dropdown
+            .dropbtn Manage Student
+            .dropdown-content
+              a#register-student(href='#') Register student
+              a(href='#') Student data
+              a(href='') Timetable
+    // Use any element to open the sidenav
+    span(onclick='openNav()')
+      a
+        img.trigger(src='/public/images/menu.svg', alt='')
+    // Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page
+    #main
+      // announcements component
+      .container(style='width: 70vw;')
+        #announcement
+          h1.subtitle Create Announcement
+          label(for='title') Title
+          input.title(name='title')
+          textarea#editor.content(name='editor')
+        button#publish Publish
+        ul#announcement-list
+          li
+            | Examinations begin on the 1st of july 
+            button#edit Edit
+            button#delete Delete
+    // staff registration
+    #staff.container
+      div
+        h1.subtitle Staff Registration
+        ul.columns
+          li.column
+            input#staff-name.input(type='text', placeholder='staff name')
+          li.column
+            input#staff-email.input(type='email', placeholder='staff email')
+          li.column
+            input#staff-number.input(type='text', placeholder='phone number')
+          li.column
+            .dropdown(style='margin-top: 1rem')
+              button.dropbtn(style='color: #111; border-radius: 20%;') Role
+              .dropdown-content
+                a(href='#') Administrative
+                a(href='#') Academic
+                a(href='#') Utility
+          li.column
+            button#submit Add Staff
+    // student reg is here
+    #student.container
+      div
+        h1.subtitle Student Registration
+        ul.columns
+          li.column
+            input#student-name.input(type='text', placeholder='staff name')
+          li.column
+            input#student-email.input(type='email', placeholder='student email')
+          li.column
+            input#student-number.input(type='text', placeholder='phone number')
+          li.column
+            .dropdown(style='margin-top: 1rem')
+              button.dropbtn(style='color: #111; border-radius: 20%;') Class
+              .dropdown-content
+                a(href='#') Upperbasic 1
+                a(href='#') Upperbasic 2
+                a(href='#') Upperbasic 3
+                a(href='#') Upperbasic 4
+                a(href='#') Upperbasic 5
+                a(href='#') Upperbasic 6
+          li.column
+            button#submit Enroll
+    script(src='https://code.jquery.com/jquery-3.4.1.min.js', integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=', crossorigin='anonymous')
+    script(src='/public/javascripts/dashboard.js')

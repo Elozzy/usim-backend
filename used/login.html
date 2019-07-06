@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <style>
+        #login-cont{
+            padding-top: 30vh;
+            max-width: 60vh;
+            height: 100vh !important;
+        }
+        .field{
+            margin: auto;
+            max-width: 20rem;
+            padding-top: 1.5rem;    
+        }
+        .pict{
+            max-width: 65rem;
+            }
+        .title{
+            padding-left: 20% !important;
+        }
+
+        @media (min-width: 1025px) {
+            /* fullscreen view */
+            #login-cont{
+                margin-left: 3rem;
+                background-color: rgb(90, 88, 88);
+            }
+            .field{
+                padding-left: 2rem;
+                max-width: 23rem;
+            }
+        }
+
+        @media (min-width: 320px) and (max-width: 480px) {
+            /* mobile view */
+            .pict{
+                display: none;
+            }
+            #login-cont{
+                margin: auto;
+            }
+            .title{
+                padding-left: 10% !important;
+                color:gray !important;
+            }
+        }
+        @media (min-width: 768px) and (max-width: 1024px) {
+            /* tablet view */
+            #login-cont{
+                margin: auto;
+                width: 100%;
+            }
+            .pict{
+                display: none;
+            }
+            .title{
+                padding-left: 20% !important;
+                color:gray !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="section columns">
+        <div id="login-cont" class="container column">
+                <label class="title is-size-2-desktop has-text-light">Welcome Back</label>
+                <div class="field">
+                    <label class="label has-text-success">School Name</label>
+                    <div class="control">
+                        <div class="select">
+                            <select>
+                            <option>School Name</option>
+                            <option>With options</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label has-text-success">Email</label>
+                    <div class="control has-icons-left has-icons-right">
+                        <input class="input" type="email" placeholder="Email input" value="hello@">
+                        <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label has-text-success">Password</label>
+                    <p class="control has-icons-left">
+                        <input class="input" type="password" placeholder="Password">
+                        <span class="icon is-small is-left">
+                        <i class="fas fa-lock"></i>
+                        </span>
+                    </p>
+                </div>
+                <div class="field">
+                    <p class="control">
+                      <button class="button is-success">
+                        Login
+                      </button>
+                    </p>
+                </div>
+        </div>
+        <div class="container pict column">
+            <span>
+                <img src="/public/images/undraw_monitor_iqpq.svg" alt="">
+            </span>
+        </div>
+    </section>
+</body>
+</html>

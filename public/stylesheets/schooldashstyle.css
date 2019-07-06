@@ -1,0 +1,299 @@
+
+body{
+    background-color: #e3f8e3;
+    width: 100vw;
+    background: url(/css/img/book-back.jpg)
+    
+  }
+  .icons{
+    max-height: 1rem;
+  }
+  .trigger{
+      max-width: 2rem;
+  }
+  .is-active{
+      color: burlywood;
+  }
+  #school-name{
+      color: burlywood;
+      font-size: 1rem;
+      padding: 10px;
+  }
+  .profile{
+      padding: 1rem;
+      max-width: 5rem;
+      border-radius: 40%;
+  }
+  ul{
+    list-style: none;
+  }
+  .sidenav {
+      height: 100%; /* 100% Full-height */
+      width: 0; /* 0 width - change this with JavaScript */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Stay on top */
+      top: 0; /* Stay at the top */
+      left: 0;
+      background: linear-gradient(rgb(0, 0, 0), rgb(41, 56, 3), rgb(41, 50, 50));
+      overflow-x: hidden; /* Disable horizontal scroll */
+      padding-top: 60px; /* Place content 60px from the top */
+      transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+
+    }
+  
+    .sidenav p{
+      text-decoration: none;
+      font-size: 1rem;
+      font-family: Arial, Helvetica, sans-serif;
+      color: burlywood;
+      display: block;
+      transition: 0.3s;
+      padding: 10px;
+    }
+    
+    /* The navigation menu links */
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 0.8rem;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+      display: block;
+      transition: 0.3s;
+    }
+    
+    /* When you mouse over the navigation links, change their color */
+    .sidenav a:hover {
+      color: burlywood;
+
+    }
+    
+    /* Position and style the close button (top right corner) */
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+    
+    #announcement{
+        margin: auto;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+    label, .title{
+      color: white;
+      border-radius: 25px;
+      margin: 1rem;
+      padding: 0.6rem;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+    .title:focus{
+      color: black;
+    }
+    .subtitle{
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+    }
+    /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+    #main {
+      transition: margin-left .5s;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      height: 100vh;
+      width: 100vw;
+    }
+  
+    /* Style The Dropdown Button */
+.dropbtn {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 16px;
+    font-size: 0.8rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: burlywood;
+    border-radius: 15px;
+  }
+.column{
+    display: block;
+    padding-top: 1rem;
+}
+.input{
+    width: 20rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: solid 1px #3e8e41;
+}
+.columns{
+    margin: auto;
+    vertical-align: middle;
+}
+.container{
+    width: 90vw;
+    text-align: center;
+    margin: auto;
+}
+#submit{
+    padding: 0.8rem;
+    background: white;
+    border-radius: 10px;
+    border: solid 1px #3e8e41;
+}
+#announcement-list{
+  margin-top: 4rem;
+  padding: 1rem;
+  font-size: 1rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background: white;
+}
+#edit, #delete, #publish{
+  padding: 10px;
+  width: 5rem;
+  border-radius: 20%;
+  background-color: white;
+  color: black;
+  border: solid 1px burlywood;
+}
+#edit:hover, #delete:hover, #publish:hover{
+  color: white;
+  background: burlywood;
+}
+
+/*admin dashboard style*/
+.admin {
+  background: white;
+  padding: 2rem;
+  min-height: 100vh;
+  width: 90vw;
+  margin: auto;
+}
+.applicants {
+  text-align: center;
+  display: block;
+}
+.apls {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding-top: 0.5rem;
+}
+.choice {
+  display: inline-block;
+}
+.accept, .reject, .view {
+  width: 144px;
+  height: 60px;
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+.accept {
+  background-color: #3e8e41;
+  color: white;
+}
+.reject {
+  background-color: #ff3860;
+  color: white;
+}
+.view {
+  background: burlywood;
+  color: white;
+}
+.accept:hover {
+  background: white;
+  color: #3e8e41;
+  transition: 0.5s;
+}
+.reject:hover {
+  background: white;
+  color: #ff3860;
+  transition: 0.5s;
+}
+.view:hover {
+  background: white;
+  color: burlywood;
+  transition: 0.5s;
+}
+
+/*approved names*/
+.approved {
+  
+}
+.approved li {
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  body {
+    background: url(/css/img/book-back-small.jpg);
+  }  
+  #announcement-list{
+    font-size: 0.8rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .admin {
+    width: 80vw;
+  }
+  .applicants {
+    text-align: left;
+  }
+  .apls {
+    text-align: left;
+  }
+  .choice {
+    
+  }
+  .accept, .reject, .view {
+    width: 180px;
+    height: 42px;
+    margin: 12px;
+    padding-top: 12px;
+  }
+}
+

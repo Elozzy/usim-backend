@@ -1,0 +1,80 @@
+doctype html
+html
+  head
+    meta(http-equiv='Content-Type', content='text/html;charset=UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    meta(http-equiv='X-UA-Compatible', content='IE=7')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css')
+    script(defer='', src='https://use.fontawesome.com/releases/v5.3.1/js/all.js')
+    style.
+      /*please do not alter the styling without informing me*/
+      #sign-up-cont{
+      padding-top: 30vh;
+      max-width: 60vh;
+      height: 100vh !important;
+      }
+      .field{
+      margin: auto;
+      max-width: 20rem;
+      padding-top: 1.5rem;
+      }
+      .pict{
+      max-width: 65rem;
+      }
+      .title{
+      padding-left: 15% !important;
+      }
+      @media (min-width: 1025px) {
+      .container{
+      margin-left: 3rem;
+      }
+      .field{
+      padding-left: 2rem;
+      max-width: 23rem;
+      }
+      }
+      @media (min-width: 768px) and (max-width: 1024px) {
+      /* tablet view */
+      .pict{
+      display: none;
+      }
+      .title{
+      padding-left: 20% !important;
+      color:gray !important;
+      }
+      }
+      @media (min-width: 320px) and (max-width: 480px) {
+      /* mobile view */
+      .pict{
+      display: none;
+      }
+      #sign-up-cont{
+      margin: auto;
+      background: white !important;
+      }
+      .title{
+      padding-left: 10% !important;
+      color:gray !important;
+      }
+      }
+  body
+    section.section.columns
+      // where the routes will be placed
+      #sign-up-cont.container.column.has-background-dark
+        label.title.has-text-light Hello there,
+        .field
+          label.label.has-text-success School Name
+          .control
+            input.input(type='text', placeholder='School name', value='School name')
+        .field
+          label.label.has-text-success Access code
+          p.control
+            input.input(type='text', placeholder='access code', value='Access code')
+        .field
+          p.control
+            button.button.is-success
+              | Sign up
+      .container.pict.column
+        span
+          img(src='/public/images/apply-school.svg', alt='')

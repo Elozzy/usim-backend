@@ -1,0 +1,70 @@
+doctype html
+html
+  head
+    meta(http-equiv='Content-Type', content='text/html;charset=UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    meta(http-equiv='X-UA-Compatible', content='IE=7')
+    link(rel='stylesheet', href='../css/teacher-dashboard.css')
+    script(defer='', src='https://use.fontawesome.com/releases/v5.3.1/js/all.js')
+  body
+    #mySidenav.sidenav
+      a.closebtn(href='javascript:void(0)', onclick='closeNav()') ×
+      img.profile(src='/css/img/lms.jpg', alt='')
+      p#student-name Student Name
+      ul
+        li
+          a(href='/index.html') Home
+        li
+          a#announce(href='#') Announcements
+        li
+          a(href='#') Timetable
+        li
+          a(href='#') Library
+        li
+          a(href='#') e-library
+        li
+          a(href='#') Results
+        li
+          a(href='#') Forum
+    // Use any element to open the sidenav
+    span(onclick='openNav()')
+      a
+        img.trigger(src='/public/images/menu.svg', alt='')
+    // Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page
+    #main
+      // announcements component
+      .grid-container
+        .grid-item
+          .card
+            .card-container
+              .a-title.dropdown
+                span announcement title
+                .dropdown-content
+                  p Hello World!
+        .grid-item
+          .card
+            .card-container
+              .a-title.dropdown
+                span announcement title
+                .dropdown-content
+                  p Hello World!
+        .grid-item
+          .card
+            .card-container
+              .a-title.dropdown
+                span announcement title
+                .dropdown-content
+                  p Hello World!
+        .grid-item
+          .card
+            .card-container
+              .a-title.dropdown
+                span announcement title
+                .dropdown-content.a-content
+                  p Hello World!
+      // timetable component
+      section.timetable
+        iframe(src='https://docs.google.com/spreadsheets/d/e/2PACX-1vRVigJrpl8cFKt8mynKjZgZTBTPrUfhvjt0ZwjwhIgp7qO59Qyq3VFcitcQeyXIqVjIoBw5wm690LR0/pubhtml?widget=true&headers=false')
+    script(src='https://code.jquery.com/jquery-3.4.1.min.js', integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=', crossorigin='anonymous')
+    script(src='/public/javascripts/dashboard.js')

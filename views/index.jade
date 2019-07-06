@@ -1,0 +1,146 @@
+doctype html
+html
+  head
+    meta(http-equiv='Content-Type', content='text/html;charset=UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    meta(http-equiv='X-UA-Compatible', content='IE=7')
+    title Home
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css')
+    script(src='https://code.jquery.com/jquery-3.4.1.min.js', integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=', crossorigin='anonymous')
+    script(src='/public/javascripts/index.js')
+    style.
+      html{
+      scroll-behavior: smooth;
+      }
+      .navbar{
+      background: rgba(70, 67, 67, 0.5) !important;
+      }
+      #signup{
+      padding-top: 18%;
+      padding-bottom: 18%;
+      background-attachment: fixed !important;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
+      .hero{
+      background-attachment: fixed !important;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
+      .learnmore{
+      padding-bottom: 15%;
+      }
+      .c img{
+      max-height: 12rem !important;
+      }
+      #logo{
+      max-height: 4rem;
+      }
+      @media only screen and (min-width : 360px) and (max-width : 740px) and (-webkit-min-device-pixel-ratio: 1)  {
+      .c img{
+      max-height: 4rem !important;
+      }
+      }
+  body
+    section#intro.hero.is-success.is-fullheight
+      // Hero head: will stick at the top
+      .hero-head
+        header.navbar
+          .container
+            .navbar-brand
+              a.navbar-item.is-size-3-desktop.has-text-light
+                h1.usims USIMS
+              span.navbar-burger.burger(data-target='navbarMenuHeroC')
+                span
+                span
+                span
+            #navbarMenuHeroC.navbar-menu
+              .navbar-end
+                a.navbar-item.is-active
+                  | Home
+                a.navbar-item(href='#about')
+                  | Learn more
+                a.navbar-item(href='#signup')
+                  | sign up
+                a.navbar-item(href='login.html')
+                  | login
+      // Hero content: will be in the middle
+      .hero-body
+        .container.has-text-centered
+          strong.subtitle.word.has-text-light.is-size-1-desktop.is-size-5-mobile
+      // Hero footer: will stick at the bottom
+    section#signup.section
+      .container.is-centered
+        .columns.is-centered.has-text-centered
+          .column.c
+            a#sch.subtitle.is-size-6.has-text-weight-semibold.has-text-dark(href='login.html')
+              span
+                img(src='/public/images/sch.svg', alt='')
+              p I am a school
+          .column.c
+            a#tch.subtitle.is-size-6.has-text-weight-semibold.has-text-dark(href='login.html')
+              span
+                img(src='/public/images/teach.svg', alt='')
+              p I am a teacher
+          .column.c
+            a#std.subtitle.is-size-6.has-text-weight-semibold.has-text-dark(href='pages/login.html')
+              span
+                img(src='/public/images/stud.svg', alt='')
+              p I am a student
+          .column.c
+            a#prt.subtitle.is-size-6.has-text-weight-semibold.has-text-dark(href='login.html')
+              span
+                img(src='/public/images/father.svg', alt='')
+              p I am a parent
+    section#about.learnmore.section
+      .container.is-centered.has-text-justified
+        h1.title.has-text-success What is USIMS
+        div
+          | It is a software-based school management system helps teachers, administrators, and 
+          | support staff streamline their daily duties.
+          br
+          |  You can easily note whatever happens 
+          |                 in the classroom, the school office, or anywhere in the facility. With just a few 
+          |                 clicks,
+          br
+          |  authorized users can pull a student’s entire history, all of the transactions
+          |                  affiliated with a remodeling project,
+          br
+          |  or even a history of the school’s special
+          |                   events or fundraisers.
+          |                 School management system also helps to improve
+          br
+          |  communications between the school, its students, and their parents.
+        h1.title.has-text-success(style='padding-top: 2rem;') Why USIMS
+        div
+          | A School is an organization having large amount of data resources spread up in
+          | all directions in form of clerks, teachers, students, staff
+          br
+          |  and so on and wants
+          |               to provide best of the facilities to its students efficiently and in a best manner.
+          |               USIMS provides the best solutions
+          br
+          |  for all the school needs.
+          |                a company which has been doing software development jobs over a decade and 
+          |                satisfying the customers 
+          br
+          | over the globe since long. Iolite School Management 
+          |                System is especially designed for the School people by our team to make functioning of
+          br
+          |                 school administration and management work of an institute effortless and easy which is carried 
+          |                 out on a daily basis. USIMS is an easy and simple 
+          br
+          | to use software that
+          |                  makes daily routine work hassle-free and accurate.
+    .section.has-background-dark
+      .container
+        .columns.is-mobile
+          .column.has-text-centered
+            figure
+              img#logo(src='/public/images/fmoe.png', alt='')
+          .column.has-text-centered
+            figure
+              img#logo(src='/public/images/cad.jpeg', alt='')
