@@ -4,9 +4,9 @@ let router = express.Router();
 //Get Login page
 
 router.get('/', (req, res, next) => {
-    res.render('login', {title: 'login'})
-} );
+    res.render('login', {title: 'Login'});
+});
 
 
 
-nodule.exports = router;
+module.exports = router;

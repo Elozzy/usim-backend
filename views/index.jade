@@ -65,7 +65,8 @@ html
                   | Learn more
                 a.navbar-item(href='#signup')
                   | sign up
-                a.navbar-item(href='/login')
+                li(class=(title == 'Login'))
+                  a.navbar-item(href='/login')
                   | login
       // Hero content: will be in the middle
       .hero-body
