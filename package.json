@@ -19,7 +19,7 @@
     "jade": "~1.11.0",
     "morgan": "~1.9.0",
     "multer": "^0.1.8",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^3.1.1",
     "passport": "*",
     "passport-http": "*",
     "passport-local": "*",
